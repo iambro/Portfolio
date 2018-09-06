@@ -38,16 +38,41 @@ $(document).ready(function() {
 
 
 /* Mobile navigation */
-$('.mobile-nav-icon').click(function() {
-    var nav = $('.main-nav');
-    var icon = $('.mobile-nav-icon i');
-        
-    nav.slideToggle(200);
-    if (icon.hasClass('ion-md-menu')) {
-        icon.addClass('ion-md-close');
-        icon.removeClass('ion-md-menu');
-    } else {
-        icon.addClass('ion-md-menu');
-        icon.removeClass('ion-md-close');
-    }
-}); 
+$('.mobile-nav-icon, .main-nav a').click(function(element){
+        var nav = $('.main-nav');
+        var icon = $('.mobile-nav-icon i');
+
+        //Gets the class name of the element that triggered the event
+        var clicked = element.target.className;
+
+        //Opens and closes the menu
+        if ($(window).width() < 768){
+            nav.slideToggle(200);
+        }
+
+        //Changes icon states of the menu button
+        if (icon.hasClass('ion-md-menu')) {
+            icon.addClass('ion-md-close');
+            icon.removeClass('ion-md-menu');
+        } else {
+            icon.addClass('ion-md-menu');
+            icon.removeClass('ion-md-close');
+        }
+    });
+
+
+    $(window).resize(function(){
+        var nav = $('.main-nav');
+        var icon = $('.mobile-nav-icon i');
+
+        if ($(window).width() > 767){
+            nav.css("display", "flex");
+            icon.addClass('ion-md-close');
+            icon.removeClass('ion-md-menu');
+        } else {
+            nav.css("display", "none");
+            icon.addClass('ion-md-menu');
+            icon.removeClass('ion-md-close');
+        }
+
+    });
