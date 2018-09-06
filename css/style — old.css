@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+    padding-top: 10px;
+}
+
+nav {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0be881;
+}
+
+#container {
+    max-width: 1140px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.logo {
+    float: left;
+    width: auto;
+    height: 60px;
+    margin-left: 10px;
+}
+
+.main-nav {
+    float: right;
+    list-style-type: none;
+}
+
+.main-nav li {
+    display: inline-block;
+    padding-top: 20px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #0be881;
+    text-decoration: none;
+    font-size: 110%;
+    font-weight: 350;
+    margin-left: 20px;
+    padding: 5px;
+    border: 1px solid transparent;
+}
+
+.main-nav li a:hover {
+    color: #fff;
+    border: 1px solid #0be881;
+    border-radius: 200px;
+    background-color: #0be881;
+}
+
+.clearer {
+    clear: both;
+}
+.name-box {
+    height: 370px;
+    background-color: #0be881;
+    padding-top: 40px;
+}
+
+.typewriter {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ h1 {
+    color: #fff;
+    font-size: 120px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: left;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 10px solid #fff; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 5px; /* Adjust as needed */
+}
+
+.typewriter h1:nth-child(1) {
+  width: 7em;
+  animation: typing1 2s steps(30, end), blinking .5s step-end infinite alternate;
+  animation-fill-mode: forwards;
+}
+.typewriter h1:nth-child(2) {
+  opacity: 0;
+  width: 8.1em;
+  animation: typing2 2s steps(30, end), blinking .5s step-end infinite alternate;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+/* The typing effect */
+@keyframes typing1 {
+    0% {
+        width: 0;
+    }
+    99.9% {
+        border right: 10px solid #fff;
+    }
+    100% {
+        border: none;
+    }
+}
+
+@keyframes typing2 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
+
+h2 {
+    padding-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-aboutme {
+    background-color: #fff;
+    padding-bottom: 60px;
+    padding-right: 20px;
+    padding-left: 20px; 
+    line-height: 200%;
+}
+
+.section-technologies {
+    background-color: #0be881;
+    padding-bottom: 60px;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 200%;
+}
+    
+.section-projects {
+    background-color: #fff;
+    padding-bottom: 60px;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 200%;
+}
+
+.section-contact {
+    background-color: #0be881;
+    padding-bottom: 60px;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 200%;
+}
+
+.scrollup {
+    width: 64px;
+    height: 64px;
+    text-decoration: none;
+    background: url("button-up.png") no-repeat 0px 0px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: none;
+    
+}
+
+.sticky {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 200;
+}

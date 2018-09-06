@@ -1,0 +1,465 @@
+/*** Main Section ***/
+*,
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1e272e;
+    color: #ffffff;
+    font-family: 'Lato', 'Arial', sans-serif;
+    overflow-x: hidden;
+  
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+header {
+    padding: 1rem 0;
+    
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main {
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+section {
+    padding: 16rem 2rem;
+    margin: 0;
+    text-align: justify;
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 0.15rem;
+    
+    display: flex;
+    flex-flow: column;
+    flex-basis: 100%;
+    align-items: center;
+}
+
+.articles-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 70%;
+    justify-content: center;
+}
+
+article {
+    padding: 1rem;
+    
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+article p {
+    margin: auto;
+}
+
+figure {
+    text-align: center;
+}
+
+
+/*** Navigation ***/
+nav {
+    flex-basis: 30%;
+}
+
+.main-nav {
+    list-style-type: none;
+    color: #ffffff; 
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.main-nav li a {
+    font-size: 1.4rem;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.8rem;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    transition: all 0.4s ease-in-out;
+}
+
+.main-nav li a:hover {
+    border: 2px solid #1e272e;
+    background-color: #485460;
+    cursor: pointer;
+}
+
+
+/*** Mobile Navigation ***/
+.mobile-nav-icon {
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 300%;
+    color: #ffffffff;
+}
+
+
+/*** Contact Form ***/
+.contact-form {
+    display: flex;
+    flex-flow: column wrap;
+    width: 30%;
+    justify-content: center;
+}
+
+.contact-form >* {
+    padding: 1rem;
+    margin: 0.5rem 0;
+}
+
+input:focus,
+textarea:focus {
+    outline-offset: 0;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    height: 20rem;
+    width: 100%;
+}
+
+.btn {
+    color: #ffffffff;
+    background-color: #1e272e;
+    border: 1px solid #1e272e;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 50%;
+    align-self: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+
+/*** Footer ***/
+footer {
+    margin: 1rem;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+footer ion-icon {
+    font-size: 4rem;
+    color: #0fbcf9;
+    
+}
+
+footer ion-icon:hover {
+    color: #ffffffff;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+#email-address {
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+    margin: 0;
+    color: #ffffffff;
+}
+
+.social-links {
+    list-style: none;
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+}
+
+/*** BORDERS ***/
+#education {
+    width: 50%;
+    border-right: 0.25rem solid rgba(72, 84, 96, 0.1);
+}
+
+#location {
+    width: 50%;
+    border-left: 0.25rem solid rgba(72, 84, 96, 0.1);
+}
+
+#goals {
+    width: 100%;
+    border-top: 0.5rem solid rgba(72, 84, 96, 0.1);
+}
+
+#html {
+    width: 33.3%;
+    border-right: 0.25rem solid rgba(30, 39, 46, 0.1);
+}
+
+#css {
+    width: 33.3%;
+    border-right: 0.25rem solid rgba(30, 39, 46, 0.1);
+    border-left: 0.25rem solid rgba(30, 39, 46, 0.1);
+}
+
+#js {
+    width: 33.3%;
+    border-left: 0.25rem solid rgba(30, 39, 46, 0.1);
+}
+
+#jquery {
+    width: 33.3%;
+   
+    border-top: 0.5rem solid rgba(30, 39, 46, 0.1);
+}
+
+#github {
+    width: 33.3%;
+
+    border-top: 0.5rem solid rgba(30, 39, 46, 0.1);
+}
+
+#ps {
+    width: 33.3%;
+    
+    border-top: 0.5rem solid rgba(30, 39, 46, 0.1);
+}
+
+#memory {
+    width: 50%;
+}
+
+#icao {
+    width: 50%;
+}
+
+
+/*** Sections ***/
+
+.name-box {
+    padding: 8rem 0;
+    line-height: normal;
+}
+
+.section-aboutme {
+    padding: 14rem 2rem;
+}
+
+.section-technologies {
+    background-color: #485460;
+}
+
+.section-projects {
+    font-size: 2rem;
+}
+
+.section-contact {
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+    background-color: #485460;  
+};
+
+
+/*** PROJECTS ***/
+.project-preview figure {
+    position: absolute;    
+}
+
+.project-preview img {
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+    border: 5px solid rgba(72, 84, 96, 0.1);
+    border-radius: 20px;
+    width: 41rem;
+}
+
+.project-preview p{
+    visibility: hidden;
+    width: 38rem;
+}
+
+.project-preview:hover img {
+    opacity: 0.5;
+    filter: blur(1rem)
+}
+
+.project-preview:hover p {
+    visibility: visible;
+    position: relative;
+    bottom: 160px;
+    cursor: pointer;
+}
+
+
+/*** H-Tags ***/
+h2 {
+    font-size: 3.2rem;
+    margin-bottom: 5rem;
+}
+
+h2::after {
+    display: block;
+    height: 0.2rem;
+    background-color: #0fbcf9;
+    content: " ";
+    width: 10rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h3::before {
+    display: block;
+    height: 0.2rem;
+    background-color: #485460;
+    content: " ";
+    width: 10rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+/*** Name box ***/
+.typewriter {
+    width: 70%;
+}
+
+h1 {
+    color: #fff;
+    font-size: 12rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: left;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 10px solid #fff; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 5px; /* Adjust as needed */
+
+}
+
+.typewriter h1:nth-child(1) {
+  width: 65rem;
+  animation: typing1 2s steps(30, end), blinking .5s step-end infinite alternate;
+  animation-fill-mode: forwards;
+}
+.typewriter h1:nth-child(2) {
+  opacity: 0;
+  width: 100rem;
+  animation: typing2 2s steps(30, end), blinking .5s step-end infinite alternate;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+        /* The typing effect */
+
+@keyframes typing1 {
+    0% {
+        width: 0;
+    }
+    99.9% {
+        border right: 10px solid #fff;
+    }
+    100% {
+        border: none;
+    }
+}
+
+@keyframes typing2 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+        /* The typewriter cursor effect */
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+/*** Addons ***/
+.scrollup {
+    width: 64px;
+    height: 64px;
+    text-decoration: none;
+    background: url("img/button-up.png") no-repeat 0px 0px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: none;
+    z-index: 200;
+}
+
+.sticky {
+    background-color: rgba(72, 84, 96, 0.95);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+}
+
+span {
+    font-size: 2.4rem;
+    color: #0fbcf9;
+}
+
+.logo {
+    height: auto;
+    width: 12rem;
+}
+
+ion-icon {
+    font-size: 6rem;
+}

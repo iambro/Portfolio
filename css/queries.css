@@ -1,0 +1,367 @@
+@media screen and (max-width: 1307px) {
+    
+    h1 {
+        font-size: 10rem;
+        letter-spacing: 5px;
+    }
+
+    .typewriter h1:nth-child(1) {
+        width: 55rem;
+    }
+
+    .typewriter h1:nth-child(2) {
+        width: 85rem;
+    }    
+}
+
+@media screen and (max-width: 1040px) {
+    
+    h1 {
+        font-size: 8rem;
+        letter-spacing: 5px;
+    }
+
+    .typewriter h1:nth-child(1) { 
+        width: 45rem;
+    }
+
+    .typewriter h1:nth-child(2) {
+        width: 70rem;
+    }    
+}
+
+
+@media screen and (max-width: 767px) {
+      
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    main {
+        width: 100%;
+        flex-flow: row wrap;
+    }
+    
+    section {
+        width: 100%;
+        font-size: 1.6rem;
+        line-height: 3rem;
+        padding: 8rem 2rem;
+    }
+    
+    .section-aboutme {
+        padding: 8rem 2rem;
+    }
+    
+    
+    .articles-container {
+        width: 100%;
+    }
+    
+    #education,
+    #location,
+    #goals {
+        width: 100%;
+        border-bottom: 0.5rem solid rgba(72, 84, 96, 0.1);
+    }
+    
+    #education {
+        border-right: none;
+    }
+    
+    #location {
+        border-left: none;
+    }
+    
+    #goals {
+        border-top: none;
+    }
+    
+    
+    .logo {
+        width: 8rem;
+    }
+    
+    .section-contact {
+        padding-bottom: 2rem;
+    }
+    
+    .typewriter {
+        width: 70%;
+    }
+    
+    h3 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 2.6rem;
+        margin-bottom: 3rem;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        letter-spacing: 5px;
+    }
+
+    .typewriter h1:nth-child(1) {
+        width: 20rem;
+    }
+
+    .typewriter h1:nth-child(2) {
+        width: 30rem;
+    }
+    
+    .project-preview img {
+        width: 20rem;
+    }
+    
+    .project-preview p{
+        visibility: hidden;
+        width: 18rem;
+        font-size: 1.6rem;
+    }
+    
+    .project-preview:hover p {
+    visibility: visible;
+    position: relative;
+    bottom: 120px;
+    cursor: pointer;
+    }
+    
+    span {
+        font-size: 2rem;
+    }
+    
+    #html,
+    #css,
+    #js {
+        width: 100%;
+        border-bottom: 0.5rem solid rgba(30, 39, 46, 0.1);
+        padding: 3rem 1rem;
+    }
+    
+    #html {
+        border-right: none;
+    }
+
+    #css {
+        border-right: none;
+        border-left: none;
+    }
+
+    #js {
+        border-left: none;
+    }
+
+    #jquery,
+    #github,
+    #ps { 
+        border-top: none;
+        padding: 3rem 1rem;
+    }
+    #jquery img,
+    #github img,
+    #ps img {
+        width: 75px;
+    } 
+    
+    .contact-form {
+        width: 70%;
+    }
+    
+    /* Mobile navi */
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .mobile-nav-icon {
+        display: block;
+    }
+    
+    .main-nav {
+        display: none;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        font-size: 1rem;
+    }
+}
+
+
+
+@media screen and (max-width: 363px) {
+      
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    main {
+        width: 100%;
+        flex-flow: row wrap;
+    }
+    
+    section {
+        width: 100%;
+        font-size: 1.6rem;
+        line-height: 3rem;
+        padding: 8rem 2rem;
+    }
+    
+    .section-aboutme {
+        padding: 8rem 2rem;
+    }
+    
+    
+    .articles-container {
+        width: 100%;
+    }
+    
+    #education,
+    #location,
+    #goals {
+        width: 100%;
+        border-bottom: 0.5rem solid rgba(72, 84, 96, 0.1);
+    }
+    
+    #education {
+        border-right: none;
+    }
+    
+    #location {
+        border-left: none;
+    }
+    
+    #goals {
+        border-top: none;
+    }
+    
+    
+    .logo {
+        width: 8rem;
+    }
+    
+    .section-contact {
+        padding-bottom: 2rem;
+    }
+    
+    .typewriter {
+        width: 70%;
+    }
+    
+    h3 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 2.6rem;
+        margin-bottom: 3rem;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+        letter-spacing: 5px;
+    }
+
+    .typewriter h1:nth-child(1) {
+        width: 15rem;
+    }
+
+    .typewriter h1:nth-child(2) {
+        width: 25rem;
+    }
+    
+    .project-preview img {
+        width: 20rem;
+    }
+    
+    .project-preview p{
+        visibility: hidden;
+        width: 18rem;
+        font-size: 1.6rem;
+    }
+    
+    .project-preview:hover p {
+    visibility: visible;
+    position: relative;
+    bottom: 120px;
+    cursor: pointer;
+    }
+    
+    span {
+        font-size: 2rem;
+    }
+    
+    #html,
+    #css,
+    #js {
+        width: 100%;
+        border-bottom: 0.5rem solid rgba(30, 39, 46, 0.1);
+        padding: 3rem 1rem;
+    }
+    
+    #html {
+        border-right: none;
+    }
+
+    #css {
+        border-right: none;
+        border-left: none;
+    }
+
+    #js {
+        border-left: none;
+    }
+
+    #jquery,
+    #github,
+    #ps { 
+        border-top: none;
+        padding: 3rem 1rem;
+    }
+    #jquery img,
+    #github img,
+    #ps img {
+        width: 75px;
+    } 
+    
+    .contact-form {
+        width: 70%;
+    }
+    
+    /* Mobile navi */
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .mobile-nav-icon {
+        display: block;
+    }
+    
+    .main-nav {
+        display: none;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
