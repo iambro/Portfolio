@@ -1,6 +1,7 @@
 /*** Main Section ***/
 *,
 html {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -19,25 +20,54 @@ body {
     font-family: 'Lato', 'Arial', sans-serif;
     overflow-x: hidden;
   
+    display: -webkit-box;
+  
+    display: -ms-flexbox;
+  
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 header {
     padding: 1rem 0;
     
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 main {
     
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -49,24 +79,50 @@ section {
     line-height: 3rem;
     letter-spacing: 0.15rem;
     
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
     flex-flow: column;
+    -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .articles-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     width: 70%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 article {
     padding: 1rem;
     
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
     flex-flow: column wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -81,6 +137,7 @@ figure {
 
 /*** Navigation ***/
 nav {
+    -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
 }
 
@@ -88,8 +145,16 @@ nav {
     list-style-type: none;
     color: #ffffff; 
     
+    display: -webkit-box; 
+    
+    display: -ms-flexbox; 
+    
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
@@ -105,6 +170,7 @@ nav {
     padding: 0.8rem;
     border: 2px solid transparent;
     border-radius: 30px;
+    -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
 
@@ -129,9 +195,16 @@ nav {
 
 /*** Contact Form ***/
 .contact-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
     flex-flow: column wrap;
     width: 30%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -161,11 +234,14 @@ textarea {
     border-radius: 30px;
     cursor: pointer;
     width: 50%;
+    -ms-flex-item-align: center;
     align-self: center;
+    -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
 
 .btn:hover {
+    -webkit-transform: scale(1.05);
     transform: scale(1.05);
 }
 
@@ -181,8 +257,15 @@ textarea {
 footer {
     margin: 1rem;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
     flex-flow: column wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -211,8 +294,16 @@ ul {
 .social-links {
     list-style: none;
     
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -ms-flex-pack:distribute;
     justify-content:space-around;
 }
 
@@ -313,6 +404,7 @@ ul {
 
 .project-preview img {
     opacity: 1;
+    -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
     border: 5px solid rgba(72, 84, 96, 0.1);
     border-radius: 20px;
@@ -326,6 +418,7 @@ ul {
 
 .project-preview:hover img {
     opacity: 0.5;
+    -webkit-filter: blur(1rem);
     filter: blur(1rem)
 }
 
@@ -390,18 +483,35 @@ h1 {
 
 .typewriter h1:nth-child(1) {
   width: 65rem;
+  -webkit-animation: typing1 2s steps(30, end), blinking .5s step-end infinite alternate;
   animation: typing1 2s steps(30, end), blinking .5s step-end infinite alternate;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 .typewriter h1:nth-child(2) {
   opacity: 0;
   width: 100rem;
+  -webkit-animation: typing2 2s steps(30, end), blinking .5s step-end infinite alternate;
   animation: typing2 2s steps(30, end), blinking .5s step-end infinite alternate;
+  -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
         /* The typing effect */
+
+@-webkit-keyframes typing1 {
+    0% {
+        width: 0;
+    }
+    99.9% {
+        border right: 10px solid #fff;
+    }
+    100% {
+        border: none;
+    }
+}
 
 @keyframes typing1 {
     0% {
@@ -412,6 +522,18 @@ h1 {
     }
     100% {
         border: none;
+    }
+}
+
+@-webkit-keyframes typing2 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
@@ -428,6 +550,12 @@ h1 {
 }
 
         /* The typewriter cursor effect */
+
+@-webkit-keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
 
 @keyframes blinking {
     50% {
