@@ -404,14 +404,19 @@ ul {
 
 .project-preview img {
     opacity: 1;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     border: 5px solid rgba(72, 84, 96, 0.1);
     border-radius: 20px;
     width: 41rem;
 }
 
-.project-preview p{
+.project-preview a {
+    text-decoration: none;
+    color: #ffffffff;
+}
+
+.project-preview p {
     visibility: hidden;
     width: 38rem;
 }
@@ -597,4 +602,10 @@ span {
 
 ion-icon {
     font-size: 6rem;
+    color: #fff;
+}
+
+.icon-inner {
+    font-size: 6rem;
+    color: #fff;
 }

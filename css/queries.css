@@ -130,16 +130,12 @@
     }
     
     .project-preview p{
-        visibility: hidden;
         width: 18rem;
         font-size: 1.6rem;
     }
     
     .project-preview:hover p {
-    visibility: visible;
-    position: relative;
-    bottom: 120px;
-    cursor: pointer;
+    bottom: 120px;;
     }
     
     span {
