@@ -416,6 +416,12 @@ ul {
     color: #ffffffff;
 }
 
+.project-preview a:active, 
+.project-preview a:visited {
+    text-decoration: none;
+    color: #ffffffff;
+}
+
 .project-preview p {
     visibility: hidden;
     width: 38rem;
