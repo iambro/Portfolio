@@ -107,6 +107,7 @@ section {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    padding-top: 2rem;
 }
 
 article {
@@ -328,39 +329,20 @@ ul {
     border-top: 0.5rem solid rgba(72, 84, 96, 0.1);
 }
 
-#html {
-    width: 33.3%;
-    border-right: 0.25rem solid rgba(30, 39, 46, 0.1);
+.bottomRight {
+    border-bottom: 0.5rem solid rgba(30, 39, 46, 0.1);
+    border-right: 0.5rem solid rgba(30, 39, 46, 0.1);
 }
 
-#css {
-    width: 33.3%;
-    border-right: 0.25rem solid rgba(30, 39, 46, 0.1);
-    border-left: 0.25rem solid rgba(30, 39, 46, 0.1);
+.bottom {
+    border-bottom: 0.5rem solid rgba(30, 39, 46, 0.1);
 }
 
-#js {
-    width: 33.3%;
-    border-left: 0.25rem solid rgba(30, 39, 46, 0.1);
+.right {
+    border-right: 0.5rem solid rgba(30, 39, 46, 0.1);
 }
 
-#jquery {
-    width: 33.3%;
-   
-    border-top: 0.5rem solid rgba(30, 39, 46, 0.1);
-}
 
-#github {
-    width: 33.3%;
-
-    border-top: 0.5rem solid rgba(30, 39, 46, 0.1);
-}
-
-#ps {
-    width: 33.3%;
-    
-    border-top: 0.5rem solid rgba(30, 39, 46, 0.1);
-}
 
 #memory {
     width: 50%;
@@ -386,6 +368,10 @@ ul {
     background-color: #485460;
 }
 
+.section-technologies article {
+    width: 33.3%;
+}
+
 .section-projects {
     font-size: 2rem;
 }
@@ -398,6 +384,7 @@ ul {
 
 
 /*** PROJECTS ***/
+
 .project-preview figure {
     position: absolute;    
 }
@@ -424,6 +411,8 @@ ul {
 
 .project-preview p {
     visibility: hidden;
+    padding:0;
+    margin: 0;
     width: 38rem;
 }
 
@@ -439,6 +428,21 @@ ul {
     bottom: 160px;
     cursor: pointer;
 }
+
+.section-projects p {
+    text-align: center;
+}
+
+.section-projects p a:link, 
+.section-projects p a:visited {
+    text-decoration: none;
+    color: #6e5494;
+}
+
+.section-projects p a:hover {
+    color: #0fbcf9;
+    text-decoration-line: underline;
+} 
 
 
 /*** H-Tags ***/
@@ -516,8 +520,8 @@ h1 {
     0% {
         width: 0;
     }
-    99.9% {
-        border right: 10px solid #fff;
+    75% {
+        border-right: 10px solid #fff;
     }
     100% {
         border: none;
@@ -528,8 +532,8 @@ h1 {
     0% {
         width: 0;
     }
-    99.9% {
-        border right: 10px solid #fff;
+    75% {
+        border-right: 10px solid #fff;
     }
     100% {
         border: none;
